@@ -5,11 +5,9 @@ Home: https://r-lum.github.io/RCarb/
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcarb-feedstock/blob/master/LICENSE.txt)
 
 Summary: Translation of the 'MATLAB' program 'Carb' (Nathan and Mauz 2008 <DOI:10.1016/j.radmeas.2007.12.012>; Mauz and Hoffmann 2014) for dose rate modelling for carbonate-rich samples in the context of trapped charged dating (e.g., luminescence dating) applications.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-rcarb` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-rcarb` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
