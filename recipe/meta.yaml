@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RCarb_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RCarb/RCarb_{{ version }}.tar.gz
-  sha256: e65cf3e60cd2073f6b6e430438a3015521fb64d6d095919f99b3f1eb0bd18a56
+  sha256: 153c019713578ab888d450f956729dc671c16201c03577a3761052c3fe0481f3
 
 build:
   merge_build_host: true  # [win]
