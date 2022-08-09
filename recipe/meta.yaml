@@ -23,14 +23,15 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-interp >=1.0
-    - r-matrixstats >=0.54.0
+    - r-interp >=1.1
+    - r-matrixstats >=0.62.0
   run:
     - r-base
-    - r-interp >=1.0
-    - r-matrixstats >=0.54.0
+    - r-interp >=1.1
+    - r-matrixstats >=0.62.0
 
 test:
   commands:
