@@ -1,11 +1,11 @@
-About r-rcarb
-=============
+About r-rcarb-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcarb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://r-lum.github.io/RCarb/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcarb-feedstock/blob/main/LICENSE.txt)
 
 Summary: Translation of the 'MATLAB' program 'Carb' (Nathan and Mauz 2008 <DOI:10.1016/j.radmeas.2007.12.012>; Mauz and Hoffmann 2014) for dose rate modelling for carbonate-rich samples in the context of trapped charged dating (e.g., luminescence dating) applications.
 
