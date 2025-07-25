@@ -1,4 +1,4 @@
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RCarb_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RCarb/RCarb_{{ version }}.tar.gz
-  sha256: 17d9c283f2fddf624c2e3444238948426bc5862145ed1b36c21378af65208f5c
+  sha256: 0fe2d3ae23a09aa6d3a51fcc27418b4b3ca050d0ce273f37f27fd1e46a9a7c07
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
