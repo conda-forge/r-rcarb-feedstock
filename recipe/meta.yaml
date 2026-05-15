@@ -17,19 +17,23 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base
+    - r-base >=4.5
     - r-interp >=1.1
-    - r-matrixstats >=0.62.0
+    - r-matrixstats >=1.5.0
   run:
-    - r-base
+    - r-base >=4.5
     - r-interp >=1.1
-    - r-matrixstats >=0.62.0
+    - r-matrixstats >=1.5.0
 
 test:
   commands:
